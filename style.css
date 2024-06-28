@@ -18,7 +18,7 @@ body {
      
   #guess-button {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 10px 20px;
     font-size: 18px;
     background-color: #0CBABA;
@@ -37,13 +37,23 @@ body {
       margin: 3px;
       min-width: 20px;
       text-align: center;
-      display: inline-block
+      display: inline-block;
+      border-radius: 8px;
+      color: rgb(5, 0, 0);
   }
      
   .row{
       margin-bottom: 10px;
+      display:flex;
+      justify-content: center;
   }
      
   .input-area{
       margin: 30px;
   }
+ 
+  footer {
+    margin-bottom: 100px;
+    text-align: center;
+ }
+  
