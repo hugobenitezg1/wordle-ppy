@@ -1,59 +1,93 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-     
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-  }
-     
-  #guess-input {
-    display: block;
-    margin: 0 auto 20px;
-    padding: 10px;
-    font-size: 18px;
-    width: 250px;
-    border: 1px solid #ccc;
-  }
-     
-  #guess-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #0CBABA;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-  }
-     
-  button:active {
-      transform: scale(0.95);
-  }
-     
-  .letter {
-      border: 1px solid black;
-      padding: 3px;
-      margin: 3px;
-      min-width: 20px;
-      text-align: center;
-      display: inline-block;
-      border-radius: 8px;
-      color: rgb(5, 0, 0);
-  }
-     
-  .row{
-      margin-bottom: 10px;
-      display:flex;
-      justify-content: center;
-  }
-     
-  .input-area{
-      margin: 30px;
-  }
- 
-  footer {
-    margin-bottom: 100px;
-    text-align: center;
- }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 70px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0CBABA, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+
+#guess-input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#guess-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0CBABA;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#guess-button:hover {
+  background-color: #089191;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.letter {
+  border: 1px solid #333;
+  padding: 8px;
+  margin: 8px;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 8px;
+  color: #333;
+  background-color: #fff;
+}
+
+.row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-area {
+  margin: 30px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+.recuadro {
+  border: 2px solid #0CBABA; 
+  background-color: #f0f0f0; 
+  padding: 0px; 
+  width: 650px; 
+  margin: 30px auto; 
+  border-radius: 8px; 
+  text-align: center; 
+}

@@ -1,23 +1,30 @@
+const API = "https://random-word-api.herokuapp.com/word?length=5&lang=es"
 let diccionario = ["APPLE", "ANGEL", "MOUSE", "HOUSE", "PLATE", "PLACE","PADRE"]
-// API
 let random = Math.random()*diccionario.length //numero aleatorio entre 0 y 5
 random = Math.floor(random)
-
 let palabraSecreta = diccionario[random]
-console.log(palabraSecreta)
+
+fetch(API)
+.then((response)=>{
+    response.json()
+    .then((data)=>{
+        palabraSecreta = data[0].toUpperCase()
+    })}).catch((e)=>{
+        console.log("ERROR")
+    })
+
 let oportunidades = 6
 
 let button = document.getElementById("guess-button")
 let input = document.getElementById("guess-input")
 let grid = document.getElementById("grid")
 
-
 button.addEventListener("click", enter)
 
 function enter() {
     let intento = input.value.toUpperCase()
     if (intento == palabraSecreta) {
-        gameOver("Ganaste")
+        gameOver("Ganaste 😀")
     }
     let row = document.createElement("div")
     row.className = "row"
@@ -37,7 +44,7 @@ function enter() {
     grid.appendChild(row)
     oportunidades--
     if (oportunidades == 0) {
-        gameOver("Perdiste");
+        gameOver("Perdiste 😞");
     }
 }
 
