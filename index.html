@@ -4,18 +4,35 @@
   <title>Wordle PPY</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <style>
+    .gif-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; 
+    }
+    .gif-container img {
+      max-width: 50%; 
+      height: auto; 
+      width: 150px; 
+    }
+  </style>
 </head>
 <body>
   <h1 id="titulo">Wordle PPY🎮</h1>
   <div class="recuadro">
-    <h2 id="subtitulo">Bienvenido. Adivina una palabra con 5 letras para ganar.Tienes 6 intentos. Suerte 😀</h2>
+    <h2 id="subtitulo">👋Bienvenido. Adivina una palabra con 5 letras para ganar. Tienes 6 intentos. ¡Suerte! 😀</h2>
   </div>
   <input type="text" id="guess-input">
   <button id="guess-button">Intentar</button>
   <div id="grid"></div>
-  <p id="guesses"></p> 
+  <p id="guesses"></p>
+  <div class="gif-container">
+    <img src="C:\Users\Hugo\Downloads\l5JY1lcatforppy.gif" alt="GIF de bienvenida">
+  </div>
   <footer>
-    <p>© Creado por Hugo Benitez para el mejor Minibootcamp PPY. 2024. 😎</p>
+    <p>© Creado por Hugo Benitez para el mejor Minibootcamp PPY. 😎</p>
+    <p>Encarnación, Paraguay. 2024.</p>
     <p><a href="https://hugobenitezg1.github.io/wordle-ppy/">Open-source in GitHub</a></p>
   </footer>
 </body>
